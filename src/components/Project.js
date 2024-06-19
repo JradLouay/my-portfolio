@@ -1,9 +1,9 @@
-function Project() {
+function Project({ project }) {
   return (
-    <article className="bg-violet-400 hover:cursor-pointer p-8 h-[600px] rounded-md border-2 border-black flex justify-between">
+    <article className="bg-violet-400 hover:cursor-pointer p-8 h-[500px] rounded-md border-2 border-black flex justify-between">
       <div className="">
         <div className="text-black text-[28px] font-medium ">
-          Audiophile ecommerce
+          Galleria slideshow site
         </div>
         <div className="text-black text-sm font-normal ">
           Lorem ipsum dolor sit amet
@@ -25,9 +25,9 @@ function Project() {
           <path
             d="M26.825 35.5724L35.575 26.8224M35.575 26.8224H26.825M35.575 26.8224V35.5724M61.5 31.4974C61.5 48.066 48.0685 61.4974 31.5 61.4974C14.9315 61.4974 1.5 48.066 1.5 31.4974C1.5 14.9289 14.9315 1.49744 31.5 1.49744C48.0685 1.49744 61.5 14.9289 61.5 31.4974Z"
             stroke="black"
-            stroke-width="1.75"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.75"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </g>
       </svg>

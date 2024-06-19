@@ -9,6 +9,7 @@ import {
 } from "@headlessui/react";
 import Link from "next/link";
 import { useState } from "react";
+import ActiveLinkStyle from "./ActiveLinkStyle";
 
 function MobileMenu() {
   let [isOpen, setIsOpen] = useState(false);
@@ -36,24 +37,24 @@ function MobileMenu() {
             y1="1.5"
             x2="34.4375"
             y2="1.5"
-            stroke-width="3"
-            stroke-linecap="round"
+            strokeWidth="3"
+            strokeLinecap="round"
           />
           <line
             x1="8.6875"
             y1="13"
             x2="34.4375"
             y2="13"
-            stroke-width="3"
-            stroke-linecap="round"
+            strokeWidth="3"
+            strokeLinecap="round"
           />
           <line
             x1="15.875"
             y1="24.5"
             x2="34.4375"
             y2="24.5"
-            stroke-width="3"
-            stroke-linecap="round"
+            strokeWidth="3"
+            strokeLinecap="round"
           />
         </svg>
       </button>
@@ -76,33 +77,65 @@ function MobileMenu() {
               >
                 <DialogPanel className="w-full grid gap-7 items-center">
                   <div className="justify-self-end">
-                    <button onClick={close}>close</button>
+                    <button
+                      className="p-2 flex justify-center items-center rounded-sm hover:bg-violet-100"
+                      onClick={close}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        className="stroke-black fill-none"
+                      >
+                        <line
+                          x1="1.41421"
+                          y1="1"
+                          x2="23"
+                          y2="22.5858"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                        />
+                        <line
+                          x1="1"
+                          y1="22.5858"
+                          x2="22.5858"
+                          y2="1"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                    </button>
                   </div>
-                  <div className="flex flex-col gap-4">
-                    <Link
+                  <div className="flex flex-col gap-4 w-fit">
+                    <ActiveLinkStyle
                       href={"/"}
                       className=" text-black text-[64px] font-bold"
+                      onClick={close}
                     >
                       HOME
-                    </Link>
-                    <Link
+                    </ActiveLinkStyle>
+                    <ActiveLinkStyle
                       href={"/about"}
                       className=" text-black text-[64px] font-bold"
+                      onClick={close}
                     >
                       ABOUT
-                    </Link>
-                    <Link
+                    </ActiveLinkStyle>
+                    <ActiveLinkStyle
                       href={"/work"}
                       className="  text-black text-[64px] font-bold"
+                      onClick={close}
                     >
                       WORK
-                    </Link>
-                    <Link
+                    </ActiveLinkStyle>
+                    <ActiveLinkStyle
                       href={"/contact"}
                       className=" text-black text-[64px] font-bold"
+                      onClick={close}
                     >
                       CONTACT
-                    </Link>
+                    </ActiveLinkStyle>
                   </div>
                   <div className="">
                     <div className=" text-black text-2xl font-semibold">
