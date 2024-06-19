@@ -4,26 +4,43 @@ import Image from "next/image";
 function ContactsComponent() {
   return (
     <div className="items-start md:items-center gap-6 flex flex-col md:flex-row">
-      <button className="px-8 py-6 bg-black text-white text-xl font-medium rounded-[60px] justify-start items-center flex">
+      <Link
+        href="/contact"
+        className="p-[10px] bg-black text-white text-[16.94px] font-medium rounded-[60px] justify-start items-center flex"
+      >
         Contact me
-      </button>
+      </Link>
       <div className="items-center gap-6 flex">
         {" "}
         <Link
-          href={""}
-          className="justify-center items-center p-4 flex rounded-full border border-black"
+          target="_blank"
+          href={"https://twitter.com/LouayJrad"}
+          className="justify-center items-center p-2 flex rounded-full hover:bg-violet-200"
         >
-          <img
+          <Image height={25} width={25} src="/Twitter.png" alt="Twitter Icon" />
+        </Link>
+        <Link
+          target="_blank"
+          href={"https://www.linkedin.com/in/louay-jrad/"}
+          className="justify-center items-center p-2 flex rounded-full hover:bg-violet-200"
+        >
+          <Image
             height={25}
             width={25}
-            className="w-[24.93px] h-[24.93px]"
-            src="https://via.placeholder.com/25x25"
-            alt=""
+            src="/Linkedin.png"
+            alt="Linkedin Icon"
           />
         </Link>
         <Link
+          target="_blank"
+          href={"https://www.instagram.com/louayjrad/"}
+          className="justify-center items-center p-2 rounded-full flex hover:bg-violet-200"
+        >
+          <Image height={25} width={25} src="/Instagram.png" alt="" />
+        </Link>
+        {/* <Link
           href={""}
-          className="justify-center items-center p-4 flex rounded-full border border-black"
+          className="justify-center items-center p-4 flex "
         >
           <img
             height={25}
@@ -32,31 +49,7 @@ function ContactsComponent() {
             src="https://via.placeholder.com/25x25"
             alt=""
           />
-        </Link>
-        <Link
-          href={""}
-          className="justify-center items-center p-4 flex rounded-full border border-black"
-        >
-          <img
-            height={25}
-            width={25}
-            className="w-[24.93px] h-[24.93px]"
-            src="https://via.placeholder.com/25x25"
-            alt=""
-          />
-        </Link>
-        <Link
-          href={""}
-          className="justify-center items-center p-4 flex rounded-full border border-black"
-        >
-          <img
-            height={25}
-            width={25}
-            className="w-[24.93px] h-[24.93px]"
-            src="https://via.placeholder.com/25x25"
-            alt=""
-          />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

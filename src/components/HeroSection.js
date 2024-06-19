@@ -8,11 +8,13 @@ function HeroSection() {
           Hey, I’m Louay jrad, a Frontend Developer with 4 years of experience.
         </h2>
         <p className="">
-          I care a lot about using design for positive impact, and
+          {/* I care a lot about using technologies for positive impact, and
           <br />
-          enjoy creating user-centric, delightful, and human
-          <br />
-          experiences.ferfer
+          enjoy creating user-centric and delightful, web applications
+          <br /> */}
+          I am deeply committed to leveraging technology to create a positive
+          impact, and I find great joy in developing user-centric, delightful
+          web applications.
         </p>
       </div>
       <ContactsComponent />
