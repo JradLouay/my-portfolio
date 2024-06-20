@@ -62,10 +62,16 @@
     .title-big {
       @apply text-8xl;
     }
+    body {
+      @apply pt-6;
+    }
   }
   @media (max-width: 678px) {
     .title-big {
       @apply text-5xl;
+    }
+    body {
+      @apply pt-4;
     }
   }
 }

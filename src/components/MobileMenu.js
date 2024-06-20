@@ -1,13 +1,10 @@
 "use client";
 import {
-  Button,
   Dialog,
   DialogPanel,
-  DialogTitle,
   Transition,
   TransitionChild,
 } from "@headlessui/react";
-import Link from "next/link";
 import { useState } from "react";
 import ActiveLinkStyle from "./ActiveLinkStyle";
 
@@ -66,7 +63,7 @@ function MobileMenu() {
           onClose={close}
         >
           <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-            <div className="flex min-h-full bg-white items-center justify-center px-4">
+            <div className="flex min-h-full bg-white pt-14 items-start justify-center px-4">
               <TransitionChild
                 enter="ease-out duration-300"
                 enterFrom="opacity-0 transform-[scale(95%)]"

@@ -20,32 +20,12 @@ function Footer() {
           </span>
         </div>
         <div className="flex justify-center sm:justify-between items-center">
-          <ul className="items-center gap-8 md:gap-11 flex footer-link">
+          <ul className="items-center gap-4 md:gap-11 flex footer-link">
             {urls.map(({ text, href }) => (
               <li key={text}>
                 <ActiveLinkHide href={href}>{text}</ActiveLinkHide>
               </li>
             ))}
-            {/* <li className="">
-              <ActiveLinkHide href={""} className="hover:underline">
-                Home
-              </ActiveLinkHide>
-            </li>
-            <li className="">
-              <ActiveLinkHide href={""} className="hover:underline">
-                About
-              </ActiveLinkHide>
-            </li>
-            <li className="">
-              <ActiveLinkHide href={""} className="hover:underline">
-                Work
-              </ActiveLinkHide>
-            </li>
-            <li className="">
-              <ActiveLinkHide href={""} className="hover:underline">
-                Contact
-              </ActiveLinkHide>
-            </li> */}
           </ul>
           <div className="md:block hidden">
             <SocialMediaIconList />
