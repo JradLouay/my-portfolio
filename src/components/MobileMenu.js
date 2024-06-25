@@ -104,7 +104,7 @@ function MobileMenu() {
                       </svg>
                     </button>
                   </div>
-                  <div className="flex flex-col gap-4 w-fit">
+                  <nav className="flex flex-col gap-4 w-fit">
                     <ActiveLinkStyle
                       href={"/"}
                       className=" text-black text-[64px] font-bold"
@@ -133,7 +133,7 @@ function MobileMenu() {
                     >
                       CONTACT
                     </ActiveLinkStyle>
-                  </div>
+                  </nav>
                   <div className="">
                     <div className=" text-black text-2xl font-semibold">
                       jrad.louay@gmail.com

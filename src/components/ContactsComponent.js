@@ -15,14 +15,14 @@ function ContactsComponent() {
         <Link
           target="_blank"
           href={"https://twitter.com/LouayJrad"}
-          className="justify-center items-center p-2 flex rounded-full hover:bg-violet-200"
+          className="justify-center items-center p-4 flex rounded-full border border-black"
         >
           <Image height={25} width={25} src="/Twitter.png" alt="Twitter Icon" />
         </Link>
         <Link
           target="_blank"
           href={"https://www.linkedin.com/in/louay-jrad/"}
-          className="justify-center items-center p-2 flex rounded-full hover:bg-violet-200"
+          className="justify-center items-center p-4 flex rounded-full border border-black"
         >
           <Image
             height={25}
@@ -34,7 +34,7 @@ function ContactsComponent() {
         <Link
           target="_blank"
           href={"https://www.instagram.com/louayjrad/"}
-          className="justify-center items-center p-2 rounded-full flex hover:bg-violet-200"
+          className="justify-center items-center p-4 rounded-full border border-black  fle"
         >
           <Image height={25} width={25} src="/Instagram.png" alt="" />
         </Link>

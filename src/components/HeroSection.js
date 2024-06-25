@@ -2,7 +2,7 @@ import ContactsComponent from "./ContactsComponent";
 
 function HeroSection() {
   return (
-    <section className="mt-28 px-0 md:px-14 pt-1 pb-14 mb-52">
+    <header className="mt-28 px-0 md:px-14 pt-1 pb-14 mb-52">
       <div className="flex-col mb-28 justify-center items-start gap-5 flex max-w-[32rem]">
         <h2 className="">
           Hey, I’m Louay jrad, a Frontend Developer with 4 years of experience.
@@ -14,7 +14,7 @@ function HeroSection() {
         </p>
       </div>
       <ContactsComponent />
-    </section>
+    </header>
   );
 }
 
