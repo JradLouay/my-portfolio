@@ -1,4 +1,4 @@
-import Project from "./Project";
+import Project from "./projectItem/Project";
 
 function Projects() {
   return (

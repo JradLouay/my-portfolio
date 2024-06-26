@@ -17,9 +17,8 @@
 }
 @layer base {
   body {
-    @apply pt-10;
+    @apply pt-10 my-0 mx-auto;
     /* max-width: 1440px; */
-    margin: 0 auto;
   }
   h2 {
     font-size: 40px;
@@ -57,6 +56,13 @@
     font-style: normal;
     font-weight: 500;
     line-height: 124%; /* 31px */
+  }
+  .card-content-container {
+    @apply w-full h-full relative block pointer-events-none;
+  }
+  .card-content-container.open {
+    @apply top-0 left-0 right-0 fixed overflow-hidden py-10;
+    z-index: 1;
   }
   @media (max-width: 1024px) {
     .title-big {
