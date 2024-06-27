@@ -5,7 +5,7 @@ import ProjectTitle from "./ProjectTitle";
 import { openSpring, closeSpring } from "./animations";
 import Overlay from "./Overlay";
 
-function Project({ project }) {
+function Project({ project, odd }) {
   const [open, setOpen] = useState(false);
   const y = useMotionValue(0);
   const zIndex = useMotionValue(open ? 10 : 0);
@@ -20,7 +20,7 @@ function Project({ project }) {
     }
   }
   return (
-    <div className="">
+    <div className={`min-h-[500px] ${odd ? "col-span-5" : "col-span-7"}`}>
       <Overlay isOpen={open} close={() => setOpen(false)} />
       <div
         onClick={() => setOpen(true)}
@@ -32,9 +32,9 @@ function Project({ project }) {
           style={{ zIndex, y }}
           layoutTransition={open ? openSpring : closeSpring}
           onUpdate={checkZIndex}
-          className="bg-violet-400 pointer-events-auto hover:cursor-pointer p-8 h-[500px] rounded-md border-2 border-black flex flex-col max-w-[700px] mx-auto my-0"
+          className="bg-violet-600 pointer-events-auto hover:cursor-pointer p-8 h-[500px] rounded-[64px] border-2 border-black flex flex-col max-w-[700px] mx-auto my-0"
         >
-          <ProjectTitle close={() => setOpen(false)} />
+          <ProjectTitle name={project.name} />
         </motion.div>
       </div>
     </div>

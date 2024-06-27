@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import iconTwitter from "../../public/icon-twitter.svg";
+import iconInstagram from "../../public/icon-instagram.svg";
 
 function ContactsComponent() {
   return (
@@ -15,11 +17,11 @@ function ContactsComponent() {
         <Link
           target="_blank"
           href={"https://twitter.com/LouayJrad"}
-          className="justify-center items-center p-4 flex rounded-full border border-black"
+          className="justify-center items-center flex"
         >
-          <Image height={25} width={25} src="/Twitter.png" alt="Twitter Icon" />
+          <Image src={iconTwitter} alt="Twitter Icon" />
         </Link>
-        <Link
+        {/* <Link
           target="_blank"
           href={"https://www.linkedin.com/in/louay-jrad/"}
           className="justify-center items-center p-4 flex rounded-full border border-black"
@@ -30,13 +32,13 @@ function ContactsComponent() {
             src="/Linkedin.png"
             alt="Linkedin Icon"
           />
-        </Link>
+        </Link> */}
         <Link
           target="_blank"
           href={"https://www.instagram.com/louayjrad/"}
-          className="justify-center items-center p-4 rounded-full border border-black  fle"
+          className="justify-center items-center flex"
         >
-          <Image height={25} width={25} src="/Instagram.png" alt="" />
+          <Image src={iconInstagram} alt="" />
         </Link>
         {/* <Link
           href={""}

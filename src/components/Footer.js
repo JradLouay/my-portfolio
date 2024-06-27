@@ -5,7 +5,7 @@ import ActiveLinkHide from "./ActiveLinkHide";
 
 function Footer() {
   return (
-    <footer className="bg-black py-6">
+    <footer className="bg-gray-900 py-6">
       <div className="section-container flex flex-col gap-14 text-white ">
         <div className="">
           {" "}

@@ -1,12 +1,12 @@
+import { projects } from "@/constants";
 import Project from "./projectItem/Project";
 
 function Projects() {
   return (
-    <section className="grid md:grid-cols-2 gap-8 lg:gap-16 xl:gap-[151px] mb-52">
-      <Project />
-      <Project />
-      <Project />
-      <Project />
+    <section className="grid gap-x-16 gap-20 md:grid-cols-12 mb-52">
+      {projects.map(function (project, index) {
+        return <Project key={index} project={project} odd={index % 2} />;
+      })}
     </section>
   );
 }

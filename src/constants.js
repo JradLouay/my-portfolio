@@ -14,4 +14,19 @@ const urls = [
   },
 ];
 
-export { urls };
+const projects = [
+  {
+    name: "Galleria",
+  },
+  {
+    name: "Audiophile",
+  },
+  {
+    name: "Quiz",
+  },
+  {
+    name: "Portfolio",
+  },
+];
+
+export { urls, projects };

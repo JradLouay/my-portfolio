@@ -1,4 +1,6 @@
-"use client";
+// "use client";
+
+import Link from "next/link";
 
 function DownloadCV() {
   async function handleDownload() {
@@ -10,12 +12,14 @@ function DownloadCV() {
     document.body.removeChild(link);
   }
   return (
-    <button
-      onClick={handleDownload}
-      className="self-start text-black text-[26px] font-semibold underline hover:text-violet-400"
+    <Link
+      // onClick={handleDownload}
+      target="_blank"
+      href={"/Louay_Jrad_CV.pdf"}
+      className="text-gray-700 text-[26px] font-semibold underline hover:text-violet-400"
     >
       Download my cv
-    </button>
+    </Link>
   );
 }
 

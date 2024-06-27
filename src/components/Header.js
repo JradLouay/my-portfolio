@@ -5,8 +5,14 @@ import Link from "next/link";
 function Header() {
   return (
     <header className="section-container flex justify-between">
-      <Link href={"/"}>
-        <h3 className="max-w-24 header-name">Louay Jrad.</h3>
+      <Link href={"/"} className="header-name group">
+        <span className="group-hover:text-violet-400 text-violet-600 hover:transition hover:duration-100 hover:ease-linear">
+          LouayJrad
+        </span>
+        .
+        <span className="group-hover:text-teal-300 text-teal-500 hover:transition hover:duration-100 hover:ease-linear">
+          _
+        </span>
       </Link>
       <nav className="hidden lg:flex items-center">
         <ul className="items-center gap-11 flex header-link">

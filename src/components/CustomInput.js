@@ -2,30 +2,20 @@ import React from "react";
 
 function CustomInput({ type, label, title, placeholder, required }) {
   return (
-    <label
-      for={title}
-      className="cursor-pointer pl-[15px] pr-[35px] pb-[23px] bg-white rounded-xl border border-black flex-col justify-center items-start inline-flex"
-    >
-      <div className="flex-col justify-center items-start gap-11 flex">
-        <div className="flex-col justify-center items-start gap-2 flex">
-          <div className="pl-2.5 py-2.5 justify-start items-center gap-2.5 inline-flex">
-            <label className="text-black text-[40px] font-medium font-['Clash Display']">
-              {label}
-            </label>
-          </div>
-        </div>
-        <div className="pl-2.5 py-2.5 justify-start items-center gap-2.5 inline-flex">
-          <input
-            name={title}
-            id={title}
-            type={type}
-            className="outline-none text-neutral-400 text-[25px] font-medium"
-            placeholder={placeholder}
-            required={required}
-          />
-        </div>
-      </div>
-    </label>
+    <div className="flex flex-col gap-3">
+      <label htmlFor={title} className="text-gray-700 text-[40px] font-medium">
+        {label}
+      </label>
+      <input
+        name={title}
+        id={title}
+        row
+        type={type}
+        className="outline-none border-b-[3px] py-3 bg-transparent border-gray-700 text-gray-700 placeholder:text-gray-700 text-[25px] font-medium hover:border-violet-500 focus:border-violet-500 hover:transition hover:duration-100 hover:ease-linear"
+        placeholder={placeholder}
+        required={required}
+      />
+    </div>
   );
 }
 

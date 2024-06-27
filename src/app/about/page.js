@@ -4,14 +4,14 @@ function About() {
   return (
     <>
       <div className="mt-[72px] flex-col justify-center items-start gap-[85px] flex">
-        <div className="max-w-xl text-black text-[43.65px] font-medium">
+        <h1 className="max-w-xl text-gray-700 text-[43.65px] font-medium">
           Hey, I’m Louay jrad, a Frontend Developer with 4 years of experience.
-        </div>
-        <div className="text-stone-900 text-xl font-medium">
+        </h1>
+        <h3 className="text-stone-900 text-xl font-medium">
           You can share your life story how you became a product designer, what
           inspired you,
-        </div>
-        <div className=" text-stone-900 text-base font-normal">
+        </h3>
+        <p className=" text-stone-900 text-base font-normal">
           Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
           tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim{" "}
           <br />
@@ -25,7 +25,7 @@ function About() {
           <br />
           qui officia deserunt mollit anim id est laborum.
           <br />
-        </div>
+        </p>
       </div>
     </>
   );

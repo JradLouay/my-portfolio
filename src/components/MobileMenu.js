@@ -63,7 +63,7 @@ function MobileMenu() {
           onClose={close}
         >
           <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-            <div className="flex min-h-full bg-white pt-14 items-start justify-center px-4">
+            <div className="flex min-h-full bg-light-cream pt-14 items-start justify-center px-4">
               <TransitionChild
                 enter="ease-out duration-300"
                 enterFrom="opacity-0 transform-[scale(95%)]"
@@ -107,38 +107,38 @@ function MobileMenu() {
                   <nav className="flex flex-col gap-4 w-fit">
                     <ActiveLinkStyle
                       href={"/"}
-                      className=" text-black text-[64px] font-bold"
+                      className=" text-gray-700 text-[64px] font-bold"
                       onClick={close}
                     >
                       HOME
                     </ActiveLinkStyle>
                     <ActiveLinkStyle
                       href={"/about"}
-                      className=" text-black text-[64px] font-bold"
+                      className=" text-gray-700 text-[64px] font-bold"
                       onClick={close}
                     >
                       ABOUT
                     </ActiveLinkStyle>
                     <ActiveLinkStyle
                       href={"/work"}
-                      className="  text-black text-[64px] font-bold"
+                      className="  text-gray-700 text-[64px] font-bold"
                       onClick={close}
                     >
                       WORK
                     </ActiveLinkStyle>
                     <ActiveLinkStyle
                       href={"/contact"}
-                      className=" text-black text-[64px] font-bold"
+                      className=" text-gray-700 text-[64px] font-bold"
                       onClick={close}
                     >
                       CONTACT
                     </ActiveLinkStyle>
                   </nav>
                   <div className="">
-                    <div className=" text-black text-2xl font-semibold">
+                    <div className=" text-gray-700 text-2xl font-semibold">
                       jrad.louay@gmail.com
                     </div>
-                    <div className=" text-black text-2xl font-semibold">
+                    <div className=" text-gray-700 text-2xl font-semibold">
                       +216 25 422 636
                     </div>
                   </div>

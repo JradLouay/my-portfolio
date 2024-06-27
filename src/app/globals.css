@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  /* background-color: #fefcf7; */
+  @apply bg-light-cream;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,12 +15,13 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    /* background-color: #333d4b; */
   }
 }
 @layer base {
   body {
     @apply pt-10 my-0 mx-auto;
-    /* max-width: 1440px; */
+    max-width: 1440px;
   }
   h2 {
     font-size: 40px;
@@ -31,6 +34,20 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    row-gap: 64px;
+    column-gap: 160px;
+  }
+  .project-grid-item-big {
+    grid-column-start: 1;
+    grid-column-end: 16;
+  }
+  .project-grid-item-small {
+    grid-column-start: 17;
+    grid-column-end: 26;
   }
   .title-big {
     font-size: 120px;
@@ -51,6 +68,22 @@
     font-weight: 500;
     line-height: normal;
   }
+
+  .link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#000, #000);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out;
+  }
+
+  .link-underline-selected {
+    background-size: 100% 3px;
+    background-position: 0 100%;
+  }
+
   .footer-link {
     font-size: 25px;
     font-style: normal;
@@ -71,6 +104,9 @@
     body {
       @apply pt-6;
     }
+    .card-content-container .open {
+      @apply py-0;
+    }
   }
   @media (max-width: 678px) {
     .title-big {
@@ -85,6 +121,7 @@
 @layer components {
   .section-container {
     @apply px-20;
+    /* max-width: 1440px; */
   }
 
   @media (max-width: 1024px) {

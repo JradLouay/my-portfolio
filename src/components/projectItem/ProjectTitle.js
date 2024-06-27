@@ -1,18 +1,18 @@
 "use client";
 import { motion } from "framer-motion";
 
-function ProjectTitle({ close }) {
+function ProjectTitle({ name, close }) {
   return (
     <motion.div layout className="flex justify-between">
       <motion.div layout className="">
-        <motion.div layout className="text-black text-[28px] font-medium ">
-          Galleria slideshow site
+        <motion.div layout className="text-gray-700 text-[28px] font-medium ">
+          {name}
         </motion.div>
-        <motion.div layout className="text-black text-sm font-normal ">
+        <motion.div layout className="text-gray-700 text-sm font-normal ">
           Lorem ipsum dolor sit amet
         </motion.div>
       </motion.div>
-      <motion.button onClick={close}>
+      <motion.button layout onClick={close}>
         {" "}
         <motion.svg
           width="63"
