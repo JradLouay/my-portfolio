@@ -20,7 +20,7 @@ function Project({ project, odd }) {
     }
   }
   return (
-    <div className={`min-h-[500px] ${odd ? "col-span-5" : "col-span-7"}`}>
+    <div className={`min-h-[500px]`}>
       <Overlay isOpen={open} close={() => setOpen(false)} />
       <div
         onClick={() => setOpen(true)}
@@ -32,7 +32,7 @@ function Project({ project, odd }) {
           style={{ zIndex, y }}
           layoutTransition={open ? openSpring : closeSpring}
           onUpdate={checkZIndex}
-          className="bg-violet-600 pointer-events-auto hover:cursor-pointer p-8 h-[500px] rounded-[64px] border-2 border-black flex flex-col max-w-[700px] mx-auto my-0"
+          className="bg-color-mint pointer-events-auto mx-auto my-0 flex h-[500px] max-w-[700px] flex-col rounded-[64px] border-2 border-gray-700 p-8 hover:cursor-pointer"
         >
           <ProjectTitle name={project.name} />
         </motion.div>

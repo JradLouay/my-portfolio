@@ -2,22 +2,18 @@ import Link from "next/link";
 import Image from "next/image";
 import iconTwitter from "../../public/icon-twitter.svg";
 import iconInstagram from "../../public/icon-instagram.svg";
+import CustomLink from "./Link";
 
 function ContactsComponent() {
   return (
-    <div className="items-start md:items-center gap-6 flex flex-col md:flex-row">
-      <Link
-        href="/contact"
-        className="p-[10px] bg-black text-white text-[16.94px] font-medium rounded-[60px] justify-start items-center flex"
-      >
-        Contact me
-      </Link>
-      <div className="items-center gap-6 flex">
+    <div className="flex flex-row items-center gap-6">
+      <CustomLink href="/contact">Contact me</CustomLink>
+      <div className="flex items-center gap-6">
         {" "}
         <Link
           target="_blank"
           href={"https://twitter.com/LouayJrad"}
-          className="justify-center items-center flex"
+          className="flex items-center justify-center"
         >
           <Image src={iconTwitter} alt="Twitter Icon" />
         </Link>
@@ -36,7 +32,7 @@ function ContactsComponent() {
         <Link
           target="_blank"
           href={"https://www.instagram.com/louayjrad/"}
-          className="justify-center items-center flex"
+          className="flex items-center justify-center"
         >
           <Image src={iconInstagram} alt="" />
         </Link>

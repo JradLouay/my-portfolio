@@ -16,16 +16,16 @@ const urls = [
 
 const projects = [
   {
-    name: "Galleria",
+    name: "Portfolio",
   },
   {
     name: "Audiophile",
   },
   {
-    name: "Quiz",
+    name: "Galleria",
   },
   {
-    name: "Portfolio",
+    name: "Quiz",
   },
 ];
 

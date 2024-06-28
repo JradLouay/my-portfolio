@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 
 function ProjectTitle({ name, close }) {
   return (
-    <motion.div layout className="flex justify-between">
-      <motion.div layout className="">
-        <motion.div layout className="text-gray-700 text-[28px] font-medium ">
+    <motion.div layout className="flex flex-row-reverse">
+      <motion.div layout className="text-right">
+        <motion.div layout className="text-[28px] font-medium text-gray-700">
           {name}
         </motion.div>
-        <motion.div layout className="text-gray-700 text-sm font-normal ">
+        <motion.div layout className="text-sm font-normal text-gray-700">
           Lorem ipsum dolor sit amet
         </motion.div>
       </motion.div>
-      <motion.button layout onClick={close}>
+      {/* <motion.button layout onClick={close}>
         {" "}
         <motion.svg
           width="63"
@@ -36,7 +36,7 @@ function ProjectTitle({ name, close }) {
             />
           </g>
         </motion.svg>
-      </motion.button>
+      </motion.button> */}
     </motion.div>
   );
 }

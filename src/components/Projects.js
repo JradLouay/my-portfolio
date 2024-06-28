@@ -3,10 +3,13 @@ import Project from "./projectItem/Project";
 
 function Projects() {
   return (
-    <section className="grid gap-x-16 gap-20 md:grid-cols-12 mb-52">
-      {projects.map(function (project, index) {
-        return <Project key={index} project={project} odd={index % 2} />;
-      })}
+    <section className="mt-40 flex flex-col gap-24">
+      <h4 className="heading-xl text-gray-700">My Projects</h4>
+      <div className="projects-grid mb-52 grid gap-20 gap-x-16">
+        {projects.map(function (project, index) {
+          return <Project key={index} project={project} />;
+        })}
+      </div>
     </section>
   );
 }
