@@ -6,16 +6,16 @@ function Header() {
   return (
     <header className="section-container flex justify-between">
       <Link href={"/"} className="header-name group">
-        <span className="group-hover:text-violet-400 text-violet-600 hover:transition hover:duration-100 hover:ease-linear">
+        <span className="text-violet-600 hover:transition hover:duration-100 hover:ease-linear group-hover:text-violet-400">
           LouayJrad
         </span>
-        .
-        <span className="group-hover:text-teal-300 text-teal-500 hover:transition hover:duration-100 hover:ease-linear">
+
+        <span className="text-teal-500 hover:transition hover:duration-100 hover:ease-linear group-hover:text-teal-300">
           _
         </span>
       </Link>
-      <nav className="hidden lg:flex items-center">
-        <ul className="items-center gap-11 flex header-link">
+      <nav className="hidden items-center lg:flex">
+        <ul className="header-link flex items-center gap-11">
           {urls.map(({ text, href }) => (
             <li key={text}>
               <ActiveLinkStyle href={href}>{text}</ActiveLinkStyle>

@@ -23,9 +23,7 @@ function WorkExperience() {
         <p className="self-end font-semibold">Aug.2020/July.2022</p>
       </div>
 
-      <LinkHoverEffect target="_blank" href={"/Louay_Jrad_CV.pdf"}>
-        Download my cv
-      </LinkHoverEffect>
+      <DownloadCV />
     </section>
   );
 }

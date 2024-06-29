@@ -6,22 +6,22 @@ import ActiveLinkHide from "./ActiveLinkHide";
 function Footer() {
   return (
     <footer className="bg-gray-900 py-6">
-      <div className="section-container flex flex-col gap-14 text-white ">
+      <div className="section-container flex flex-col gap-14 text-white">
         <div className="">
           {" "}
-          <span className="max-w-6xl title-big">
+          <span className="title-big max-w-6xl">
             Got a Project to work with?&nbsp;
           </span>{" "}
           <span className="hover:text-violet-400">
             {" "}
-            <Link href={"/contact"} className="underline title-big">
+            <Link href={"/contact"} className="title-big underline">
               Contact me!
             </Link>
           </span>
         </div>
-        <div className="flex justify-center sm:justify-between items-center">
+        <div className="flex items-center justify-center sm:justify-between">
           <nav className="flex items-center">
-            <ul className="items-center gap-4 md:gap-11 flex footer-link">
+            <ul className="footer-link flex items-center gap-4 md:gap-11">
               {urls.map(({ text, href }) => (
                 <li key={text}>
                   <ActiveLinkHide href={href}>{text}</ActiveLinkHide>
@@ -29,13 +29,15 @@ function Footer() {
               ))}
             </ul>
           </nav>
-          <div className="md:block hidden">
+          <div className="hidden md:block">
             <SocialMediaIconList />
           </div>{" "}
         </div>
-        <div className="flex justify-between items-center">
-          <div className="text-white text-xl font-medium">©2024 Louay Jrad</div>
-          <div className="md:hidden block">
+        <div className="flex items-center justify-between">
+          <div className="text-xl font-medium text-white">
+            ©2024 Louay Jrad
+          </div>
+          <div className="block md:hidden">
             <SocialMediaIconList />
           </div>
         </div>

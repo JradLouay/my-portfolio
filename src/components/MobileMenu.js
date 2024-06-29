@@ -21,12 +21,12 @@ function MobileMenu() {
 
   return (
     <>
-      <button onClick={open} className="block lg:hidden hover:cursor-pointer">
+      <button onClick={open} className="block hover:cursor-pointer lg:hidden">
         <svg
           width="36"
           height="26"
           viewBox="0 0 36 26"
-          className="stroke-black fill-none"
+          className="fill-none stroke-black"
           xmlns="http://www.w3.org/2000/svg"
         >
           <line
@@ -63,7 +63,7 @@ function MobileMenu() {
           onClose={close}
         >
           <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-            <div className="flex min-h-full bg-light-cream pt-14 items-start justify-center px-4">
+            <div className="flex min-h-full items-start justify-center bg-light-cream px-4 pt-14">
               <TransitionChild
                 enter="ease-out duration-300"
                 enterFrom="opacity-0 transform-[scale(95%)]"
@@ -72,10 +72,10 @@ function MobileMenu() {
                 leaveFrom="opacity-100 transform-[scale(100%)]"
                 leaveTo="opacity-0 transform-[scale(95%)]"
               >
-                <DialogPanel className="w-full grid gap-7 items-center">
+                <DialogPanel className="grid w-full items-center gap-7">
                   <div className="justify-self-end">
                     <button
-                      className="p-2 flex justify-center items-center rounded-sm hover:bg-violet-100"
+                      className="flex items-center justify-center rounded-sm p-2 hover:bg-violet-100"
                       onClick={close}
                     >
                       <svg
@@ -83,7 +83,7 @@ function MobileMenu() {
                         width="24"
                         height="24"
                         viewBox="0 0 24 24"
-                        className="stroke-black fill-none"
+                        className="fill-none stroke-black"
                       >
                         <line
                           x1="1.41421"
@@ -104,41 +104,34 @@ function MobileMenu() {
                       </svg>
                     </button>
                   </div>
-                  <nav className="flex flex-col gap-4 w-fit">
+                  <nav className="flex w-fit flex-col gap-4">
                     <ActiveLinkStyle
                       href={"/"}
-                      className=" text-gray-700 text-[64px] font-bold"
+                      className="text-[64px] font-bold text-gray-700"
                       onClick={close}
                     >
                       HOME
                     </ActiveLinkStyle>
                     <ActiveLinkStyle
-                      href={"/about"}
-                      className=" text-gray-700 text-[64px] font-bold"
-                      onClick={close}
-                    >
-                      ABOUT
-                    </ActiveLinkStyle>
-                    <ActiveLinkStyle
                       href={"/work"}
-                      className="  text-gray-700 text-[64px] font-bold"
+                      className="text-[64px] font-bold text-gray-700"
                       onClick={close}
                     >
                       WORK
                     </ActiveLinkStyle>
                     <ActiveLinkStyle
                       href={"/contact"}
-                      className=" text-gray-700 text-[64px] font-bold"
+                      className="text-[64px] font-bold text-gray-700"
                       onClick={close}
                     >
                       CONTACT
                     </ActiveLinkStyle>
                   </nav>
                   <div className="">
-                    <div className=" text-gray-700 text-2xl font-semibold">
+                    <div className="text-2xl font-semibold text-gray-700">
                       jrad.louay@gmail.com
                     </div>
-                    <div className=" text-gray-700 text-2xl font-semibold">
+                    <div className="text-2xl font-semibold text-gray-700">
                       +216 25 422 636
                     </div>
                   </div>

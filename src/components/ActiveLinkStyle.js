@@ -9,8 +9,8 @@ function ActiveLinkStyle({ children, href, className, ...rest }) {
   return (
     <Link
       href={href}
-      className={`text-gray-500 hover:text-gray-700 hover:transition hover:duration-100 hover:ease-linear ${
-        active && "text-gray-700 underline transition duration-500 ease-in-out"
+      className={`text-[#83888F] hover:text-[#333D4B] hover:transition hover:duration-100 hover:ease-linear ${
+        active && "text-[#333D4B] underline transition duration-500 ease-in-out"
       } capitalize ${className !== undefined ? className : ""}`}
       {...(rest !== undefined && rest)}
     >
