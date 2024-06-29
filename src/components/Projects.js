@@ -7,7 +7,7 @@ function Projects() {
       <h4 className="heading-xl text-gray-700">My Projects</h4>
       <div className="projects-grid mb-52 grid gap-20 gap-x-16">
         {projects.map(function (project, index) {
-          return <Project key={index} project={project} />;
+          return <Project key={index} index={index} project={project} />;
         })}
       </div>
     </section>

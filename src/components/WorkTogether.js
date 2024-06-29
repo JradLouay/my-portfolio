@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ContactsComponent from "./ContactsComponent";
 import LinkHoverEffect from "./LinkHoverEffect";
+import CustomLink from "./Link";
 
 function WorkTogether() {
   return (
@@ -17,7 +18,8 @@ function WorkTogether() {
           </LinkHoverEffect>
         </p>
       </div>
-      <ContactsComponent />
+      {/* <ContactsComponent /> */}
+      <CustomLink href="/contact">Contact me</CustomLink>
     </section>
   );
 }

@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import iconTwitter from "../../public/icon-twitter.svg";
 import iconInstagram from "../../public/icon-instagram.svg";
+import iconGithub from "../../public/icon-github.svg";
+import iconFMentor from "../../public/icon-frontend-mentor.svg";
 import CustomLink from "./Link";
 
 function ContactsComponent() {
@@ -17,18 +19,6 @@ function ContactsComponent() {
         >
           <Image src={iconTwitter} alt="Twitter Icon" />
         </Link>
-        {/* <Link
-          target="_blank"
-          href={"https://www.linkedin.com/in/louay-jrad/"}
-          className="justify-center items-center p-4 flex rounded-full border border-black"
-        >
-          <Image
-            height={25}
-            width={25}
-            src="/Linkedin.png"
-            alt="Linkedin Icon"
-          />
-        </Link> */}
         <Link
           target="_blank"
           href={"https://www.instagram.com/louayjrad/"}
@@ -36,18 +26,20 @@ function ContactsComponent() {
         >
           <Image src={iconInstagram} alt="" />
         </Link>
-        {/* <Link
+        <Link
+          target="_blank"
           href={""}
-          className="justify-center items-center p-4 flex "
+          className="flex items-center justify-center"
         >
-          <img
-            height={25}
-            width={25}
-            className="w-[24.93px] h-[24.93px]"
-            src="https://via.placeholder.com/25x25"
-            alt=""
-          />
-        </Link> */}
+          <Image src={iconGithub} alt="" />
+        </Link>
+        <Link
+          target="_blank"
+          href={""}
+          className="flex items-center justify-center"
+        >
+          <Image src={iconFMentor} alt="" />
+        </Link>
       </div>
     </div>
   );

@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 function ProjectTitle({ name, close }) {
   return (
     <motion.div layout className="flex flex-row-reverse">
-      <motion.div layout className="text-right">
-        <motion.div layout className="text-[28px] font-medium text-gray-700">
+      <motion.div layout className="text-right text-slate-800">
+        <motion.div layout className="heading-l">
           {name}
         </motion.div>
-        <motion.div layout className="text-sm font-normal text-gray-700">
+        <motion.div layout className="text-sm font-normal">
           Lorem ipsum dolor sit amet
         </motion.div>
       </motion.div>

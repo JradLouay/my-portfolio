@@ -1,15 +1,23 @@
 "use client";
+import Image from "next/image";
 import { memo, useRef, useState } from "react";
-import { motion, useMotionValue } from "framer-motion";
+import { color, motion, useMotionValue } from "framer-motion";
 import ProjectTitle from "./ProjectTitle";
 import { openSpring, closeSpring } from "./animations";
 import Overlay from "./Overlay";
 
-function Project({ project, odd }) {
+function Project({ project, index }) {
   const [open, setOpen] = useState(false);
   const y = useMotionValue(0);
-  const zIndex = useMotionValue(open ? 10 : 0);
+  // const zIndex = useMotionValue(open ? 10 : 0);
   const cardRef = useRef(null);
+
+  const colors = [
+    "bg-color-mint",
+    "bg-color-red-rusty",
+    "bg-color-pinky",
+    "bg-color-pinky",
+  ];
 
   function checkZIndex(latest) {
     console.log(latest);
@@ -20,23 +28,32 @@ function Project({ project, odd }) {
     }
   }
   return (
-    <div className={`min-h-[500px]`}>
-      <Overlay isOpen={open} close={() => setOpen(false)} />
-      <div
+    <div
+      // style={{ transition: "all" }}
+      // transition={{ duration: 0.3, ease: "easeInOut" }}
+      className={`h-[200px] lg:h-[400px]`}
+    >
+      {open && <Overlay isOpen={open} close={() => setOpen(false)} />}
+      <motion.div
         onClick={() => setOpen(true)}
         className={`card-content-container ${open && "open"} `}
       >
         <motion.div
           layout
           ref={cardRef}
-          style={{ zIndex, y }}
+          style={{ y }}
+          whileHover={{ y: open ? 0 : -8 }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
           layoutTransition={open ? openSpring : closeSpring}
-          onUpdate={checkZIndex}
-          className="bg-color-mint pointer-events-auto mx-auto my-0 flex h-[500px] max-w-[700px] flex-col rounded-[64px] border-2 border-gray-700 p-8 hover:cursor-pointer"
+          // onUpdate={checkZIndex}
+          className={`${colors[index]} rusty pointer-events-auto relative mx-auto my-0 flex h-full max-w-[700px] flex-col gap-16 overflow-hidden rounded-[24px] p-6 hover:cursor-pointer lg:rounded-[64px] lg:px-20 lg:py-10`}
         >
           <ProjectTitle name={project.name} />
+          <motion.div layout>
+            <Image src={project.image} alt="quiz" className="rounded-lg" />
+          </motion.div>
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 }

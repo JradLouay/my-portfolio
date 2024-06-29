@@ -2,6 +2,7 @@ import { Space_Grotesk } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import "./globals.css";
+import StarsContainer from "@/components/Bubbles/Stars";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -40,8 +41,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={spaceGrotesk.className}>
         <Header />
-        <main className="min-h-screen section-container">{children}</main>
+        <main className="section-container min-h-screen">{children}</main>
         <Footer />
+        <StarsContainer />
       </body>
     </html>
   );

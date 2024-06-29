@@ -22,6 +22,8 @@
   body {
     @apply mx-auto my-0 pt-10;
     max-width: 1440px;
+    /* cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMCIgZmlsbD0iI0U4QjA1OSIvPjwvc3ZnPg=="),
+      auto; */
   }
   h2 {
     font-size: 40px;
@@ -56,6 +58,14 @@
     font-weight: 700;
     line-height: 56px; /* 116.667% */
     letter-spacing: -1.5px;
+  }
+
+  /* Heading (M) */
+  .heading-m {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
   }
   /* Body */
   .body {
@@ -108,7 +118,6 @@
     line-height: normal;
   }
   .header-link {
-    color: #c4c4c4;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
