@@ -11,7 +11,7 @@ function SocialMediaIconList() {
       <li>
         <Link
           target="_blank"
-          href={""}
+          href={"https://www.linkedin.com/in/louay-jrad/"}
           className="flex items-center justify-center"
         >
           <Image src={iconLinkedin} alt="linkedIn icon" />
@@ -20,7 +20,7 @@ function SocialMediaIconList() {
       <li>
         <Link
           target="_blank"
-          href={""}
+          href={"https://twitter.com/LouayJrad"}
           className="flex items-center justify-center"
         >
           <Image src={iconTwitter} alt="Twitter Icon" />
@@ -29,7 +29,7 @@ function SocialMediaIconList() {
       <li>
         <Link
           target="_blank"
-          href={""}
+          href={"https://www.instagram.com/louayjrad/"}
           className="flex items-center justify-center"
         >
           <Image src={iconInstagram} alt="instagram icon" />
@@ -38,7 +38,7 @@ function SocialMediaIconList() {
       <li>
         <Link
           target="_blank"
-          href={""}
+          href={"https://github.com/JradLouay"}
           className="flex items-center justify-center"
         >
           <Image src={iconGithub} alt="github icon" />

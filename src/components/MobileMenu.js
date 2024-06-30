@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
 import {
   Dialog,
@@ -6,7 +7,6 @@ import {
   Transition,
   TransitionChild,
 } from "@headlessui/react";
-import { useState } from "react";
 import ActiveLinkStyle from "./ActiveLinkStyle";
 import LinkHoverEffect from "./LinkHoverEffect";
 import ContactsComponent from "./ContactsComponent";

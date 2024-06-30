@@ -1,6 +1,4 @@
 import LinkHoverEffect from "./LinkHoverEffect";
-import CustomLink from "./Link";
-import DownloadCV from "./DownloadCV";
 
 function WorkTogether() {
   return (
