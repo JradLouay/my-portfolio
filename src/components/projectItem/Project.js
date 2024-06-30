@@ -12,13 +12,14 @@ function Project({ project, index }) {
   // const zIndex = useMotionValue(open ? 10 : 0);
   const cardRef = useRef(null);
 
-  const colors = [
-    "bg-color-mint",
-    "bg-color-red-rusty",
-    "bg-color-pinky",
-    "bg-color-pinky",
-    "bg-color-dark-violet",
-  ];
+  const colors = {
+    1: "bg-color-mint",
+    2: "bg-color-red-rusty",
+    3: "bg-color-pinky",
+    4: "bg-color-dark-violet",
+  };
+
+  const color = colors[index + 1];
 
   function checkZIndex(latest) {
     console.log(latest);
@@ -43,9 +44,13 @@ function Project({ project, index }) {
           transition={{ duration: 0.3, ease: "easeInOut" }}
           layoutTransition={open ? openSpring : closeSpring}
           // onUpdate={checkZIndex}
-          className={`${colors[index]} rusty pointer-events-auto relative mx-auto my-0 flex h-full max-w-[700px] flex-col gap-12 overflow-hidden rounded-[24px] p-6 hover:cursor-pointer xl:rounded-[64px] xl:px-20 xl:py-10`}
+          className={`${color} rusty pointer-events-auto relative mx-auto my-0 flex h-full max-w-[700px] flex-col gap-12 overflow-hidden rounded-[24px] p-6 hover:cursor-pointer xl:rounded-[64px] xl:px-20 xl:py-10`}
         >
-          <ProjectTitle name={project.name} subTitle={project.subTitle} />
+          <ProjectTitle
+            name={project.name}
+            subTitle={project.subTitle}
+            isVisible={open}
+          />
           <motion.div layout>
             <Image src={project.image} alt="quiz" className="rounded-lg" />
           </motion.div>
