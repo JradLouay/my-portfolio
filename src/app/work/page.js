@@ -5,7 +5,7 @@ function Work() {
   return (
     <>
       <WorkExperience />
-      <Projects />
+      <Projects showAll />
     </>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { memo, useRef, useState } from "react";
-import { color, motion, useMotionValue } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 import ProjectTitle from "./ProjectTitle";
 import { openSpring, closeSpring } from "./animations";
 import Overlay from "./Overlay";
@@ -15,11 +15,19 @@ function Project({ project, index }) {
   const colors = {
     1: "bg-color-mint",
     2: "bg-color-red-rusty",
-    3: "bg-color-pinky",
+    3: "bg-color-light-pink",
     4: "bg-color-dark-violet",
+    5: "bg-color-light-blue",
+    6: "bg-color-pinky",
   };
 
   const color = colors[index + 1];
+
+  function toggle() {
+    if (!project.workInProgress) {
+      setOpen((prev) => !prev);
+    }
+  }
 
   function checkZIndex(latest) {
     console.log(latest);
@@ -31,9 +39,9 @@ function Project({ project, index }) {
   }
   return (
     <div className={`h-[400px]`}>
-      {open && <Overlay isOpen={open} close={() => setOpen(false)} />}
+      {open && <Overlay isOpen={open} close={toggle} />}
       <motion.div
-        onClick={() => setOpen(true)}
+        onClick={toggle}
         className={`card-content-container ${open && "open"} `}
       >
         <motion.div
@@ -44,7 +52,7 @@ function Project({ project, index }) {
           transition={{ duration: 0.3, ease: "easeInOut" }}
           layoutTransition={open ? openSpring : closeSpring}
           // onUpdate={checkZIndex}
-          className={`${color} rusty pointer-events-auto relative mx-auto my-0 flex h-full max-w-[700px] flex-col gap-12 overflow-hidden rounded-[24px] p-6 hover:cursor-pointer xl:rounded-[64px] xl:px-20 xl:py-10`}
+          className={`${color} rusty pointer-events-auto relative mx-auto my-0 flex h-full max-w-[700px] flex-col gap-12 overflow-hidden rounded-[24px] p-6 ${project.workInProgress ? "hover:cursor-not-allowed" : "hover:cursor-pointer"} xl:rounded-[64px] xl:px-20 xl:py-10`}
         >
           <ProjectTitle
             name={project.name}

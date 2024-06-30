@@ -2,8 +2,8 @@ import quizImage from "../public/quiz-preview.jpg";
 import galleriaImage from "../public/galleria-preview.jpg";
 import portfolioImage from "../public/single-preview.jpg";
 import audiophileImage from "../public/audiophile-preview.jpg";
-import { subclip } from "three/src/animation/AnimationUtils";
-
+import coffeeroastersImage from "../public/coffeeroasters-preview.jpg";
+import sinokompiImage from "../public/sinokompi.jpg";
 const urls = [
   { text: "home", href: "/" },
   {
@@ -26,20 +26,28 @@ const projects = [
   {
     name: "Audiophile",
     image: audiophileImage,
-    color: "bg-color-red-rusty",
     subTitle: "E-commerce website",
   },
   {
     name: "Galleria",
     image: galleriaImage,
-    color: "bg-color-pinky",
     subTitle: "Art gallery slideshow",
   },
   {
     name: "Quiz",
     image: quizImage,
-    color: "bg-color-dark-violet",
     subTitle: "Frontend Quiz app",
+  },
+  {
+    name: "Coffeeroasters",
+    image: coffeeroastersImage,
+    subTitle: "Coffeeroasters website",
+    workInProgress: true,
+  },
+  {
+    name: "Sinokompi",
+    image: sinokompiImage,
+    subTitle: "Sinokompi E-commerce website",
   },
 ];
 

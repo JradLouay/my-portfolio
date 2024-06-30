@@ -8,9 +8,7 @@ function ProjectTitle({ name, subTitle }) {
         <motion.div layout className="heading-l">
           {name}
         </motion.div>
-        <motion.div layout className="text-sm font-medium">
-          {subTitle}
-        </motion.div>
+        <motion.div className="text-sm font-medium">{subTitle}</motion.div>
       </motion.div>
     </motion.div>
   );
