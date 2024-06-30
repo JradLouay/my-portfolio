@@ -13,12 +13,12 @@ function Contact() {
     console.log(message);
   }
   return (
-    <section className="grid lg:grid-cols-2 gap-16 mt-16 lg:mt-24">
-      <h1 className="text-gray-700 text-[14vw] leading-[1em] font-medium">
+    <section className="mt-16 grid gap-16 lg:mt-24 lg:grid-cols-2">
+      <h1 className="text-[14vw] font-medium leading-[1em] text-gray-700">
         Hello.
       </h1>
       <form
-        className="flex mb-72 flex-col items-stretch gap-8"
+        className="mb-72 flex flex-col items-stretch gap-8"
         action={sendEmail}
       >
         <CustomInput
@@ -38,7 +38,7 @@ function Contact() {
         <CustomTextArea
           label="Message"
           title="message"
-          placeholder={"Type your message here"}
+          placeholder={"We would like to hire you!!"}
           required={true}
           type="text"
         />

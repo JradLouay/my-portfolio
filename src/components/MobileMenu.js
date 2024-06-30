@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import {
   Dialog,
   DialogPanel,
@@ -7,63 +8,32 @@ import {
 } from "@headlessui/react";
 import { useState } from "react";
 import ActiveLinkStyle from "./ActiveLinkStyle";
+import LinkHoverEffect from "./LinkHoverEffect";
+import ContactsComponent from "./ContactsComponent";
+import burgerImage from "../../public/icon-hamburger.svg";
+import iconClose from "../../public/icon-close.svg";
 
 function MobileMenu() {
   let [isOpen, setIsOpen] = useState(false);
 
-  function open() {
-    setIsOpen(true);
-  }
-
-  function close() {
-    setIsOpen(false);
+  function toggle() {
+    setIsOpen((prev) => !prev);
   }
 
   return (
     <>
-      <button onClick={open} className="block hover:cursor-pointer lg:hidden">
-        <svg
-          width="36"
-          height="26"
-          viewBox="0 0 36 26"
-          className="fill-none stroke-black"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line
-            x1="1.5"
-            y1="1.5"
-            x2="34.4375"
-            y2="1.5"
-            strokeWidth="3"
-            strokeLinecap="round"
-          />
-          <line
-            x1="8.6875"
-            y1="13"
-            x2="34.4375"
-            y2="13"
-            strokeWidth="3"
-            strokeLinecap="round"
-          />
-          <line
-            x1="15.875"
-            y1="24.5"
-            x2="34.4375"
-            y2="24.5"
-            strokeWidth="3"
-            strokeLinecap="round"
-          />
-        </svg>
+      <button onClick={toggle} className="block hover:cursor-pointer lg:hidden">
+        <Image src={burgerImage} alt="burger icon" />
       </button>
 
       <Transition appear show={isOpen}>
         <Dialog
           as="div"
           className="relative z-10 focus:outline-none"
-          onClose={close}
+          onClose={toggle}
         >
           <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-            <div className="flex min-h-full items-start justify-center bg-light-cream px-4 pt-14">
+            <div className="flex min-h-full items-start justify-center bg-light-cream px-4 pb-14 pt-10">
               <TransitionChild
                 enter="ease-out duration-300"
                 enterFrom="opacity-0 transform-[scale(95%)]"
@@ -76,64 +46,39 @@ function MobileMenu() {
                   <div className="justify-self-end">
                     <button
                       className="flex items-center justify-center rounded-sm p-2 hover:bg-violet-100"
-                      onClick={close}
+                      onClick={toggle}
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        className="fill-none stroke-black"
-                      >
-                        <line
-                          x1="1.41421"
-                          y1="1"
-                          x2="23"
-                          y2="22.5858"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                        />
-                        <line
-                          x1="1"
-                          y1="22.5858"
-                          x2="22.5858"
-                          y2="1"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                        />
-                      </svg>
+                      <Image src={iconClose} alt="close icon" />
                     </button>
                   </div>
                   <nav className="flex w-fit flex-col gap-4">
                     <ActiveLinkStyle
                       href={"/"}
                       className="text-[64px] font-bold text-gray-700"
-                      onClick={close}
+                      onClick={toggle}
                     >
                       HOME
                     </ActiveLinkStyle>
                     <ActiveLinkStyle
                       href={"/work"}
                       className="text-[64px] font-bold text-gray-700"
-                      onClick={close}
+                      onClick={toggle}
                     >
                       WORK
                     </ActiveLinkStyle>
                     <ActiveLinkStyle
                       href={"/contact"}
                       className="text-[64px] font-bold text-gray-700"
-                      onClick={close}
+                      onClick={toggle}
                     >
                       CONTACT
                     </ActiveLinkStyle>
                   </nav>
-                  <div className="">
-                    <div className="text-2xl font-semibold text-gray-700">
+                  <div className="flex flex-col gap-6">
+                    <LinkHoverEffect href={"mailto:jrad.louay@gmail.com"}>
                       jrad.louay@gmail.com
-                    </div>
-                    <div className="text-2xl font-semibold text-gray-700">
-                      +216 25 422 636
-                    </div>
+                    </LinkHoverEffect>
+                    <ContactsComponent />
                   </div>
                 </DialogPanel>
               </TransitionChild>

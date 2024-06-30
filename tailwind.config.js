@@ -17,6 +17,7 @@ module.exports = {
         "color-mint": "hsla(172, 45%, 75%, 1)",
         "color-red-rusty": "#F4A261",
         "color-pinky": "hsla(284, 61%, 74%, 1)",
+        "color-dark-violet": "7b2cbf",
       },
       boxShadow: {
         "custom-black": "9px 9px 0px 0px #000",

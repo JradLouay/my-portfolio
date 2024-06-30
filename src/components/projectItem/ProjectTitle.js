@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-function ProjectTitle({ name }) {
+function ProjectTitle({ name, subTitle }) {
   return (
     <motion.div layout className="flex flex-row-reverse">
       <motion.div layout className="text-right text-slate-800">
@@ -9,7 +9,7 @@ function ProjectTitle({ name }) {
           {name}
         </motion.div>
         <motion.div layout className="text-sm font-medium">
-          Lorem ipsum dolor sit amet
+          {subTitle}
         </motion.div>
       </motion.div>
     </motion.div>

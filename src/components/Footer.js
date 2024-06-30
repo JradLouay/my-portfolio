@@ -5,7 +5,7 @@ import ActiveLinkHide from "./ActiveLinkHide";
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 py-6">
+    <footer className="bg-gray-900 py-8">
       <div className="section-container flex flex-col gap-14 text-white">
         <div className="">
           {" "}
@@ -14,7 +14,10 @@ function Footer() {
           </span>{" "}
           <span className="hover:text-violet-400">
             {" "}
-            <Link href={"/contact"} className="title-big underline">
+            <Link
+              href={"/contact"}
+              className="title-big underline hover:transition hover:duration-100 hover:ease-linear"
+            >
               Contact me!
             </Link>
           </span>
@@ -33,10 +36,19 @@ function Footer() {
             <SocialMediaIconList />
           </div>{" "}
         </div>
-        <div className="flex items-center justify-between">
-          <div className="text-xl font-medium text-white">
+        <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
+          {/* <div className="text-xl font-medium text-white">
             ©2024 Louay Jrad
-          </div>
+          </div> */}
+          <Link href={"/"} className="header-name group">
+            <span className="text-violet-400 hover:transition hover:duration-100 hover:ease-linear group-hover:text-violet-300">
+              LouayJrad
+            </span>
+
+            <span className="text-teal-300 hover:transition hover:duration-100 hover:ease-linear group-hover:text-teal-200">
+              _
+            </span>
+          </Link>
           <div className="block md:hidden">
             <SocialMediaIconList />
           </div>

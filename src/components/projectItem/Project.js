@@ -17,6 +17,7 @@ function Project({ project, index }) {
     "bg-color-red-rusty",
     "bg-color-pinky",
     "bg-color-pinky",
+    "bg-color-dark-violet",
   ];
 
   function checkZIndex(latest) {
@@ -28,11 +29,7 @@ function Project({ project, index }) {
     }
   }
   return (
-    <div
-      // style={{ transition: "all" }}
-      // transition={{ duration: 0.3, ease: "easeInOut" }}
-      className={`h-[200px] lg:h-[400px]`}
-    >
+    <div className={`h-[400px]`}>
       {open && <Overlay isOpen={open} close={() => setOpen(false)} />}
       <motion.div
         onClick={() => setOpen(true)}
@@ -46,9 +43,9 @@ function Project({ project, index }) {
           transition={{ duration: 0.3, ease: "easeInOut" }}
           layoutTransition={open ? openSpring : closeSpring}
           // onUpdate={checkZIndex}
-          className={`${colors[index]} rusty pointer-events-auto relative mx-auto my-0 flex h-full max-w-[700px] flex-col gap-16 overflow-hidden rounded-[24px] p-6 hover:cursor-pointer lg:rounded-[64px] lg:px-20 lg:py-10`}
+          className={`${colors[index]} rusty pointer-events-auto relative mx-auto my-0 flex h-full max-w-[700px] flex-col gap-12 overflow-hidden rounded-[24px] p-6 hover:cursor-pointer xl:rounded-[64px] xl:px-20 xl:py-10`}
         >
-          <ProjectTitle name={project.name} />
+          <ProjectTitle name={project.name} subTitle={project.subTitle} />
           <motion.div layout>
             <Image src={project.image} alt="quiz" className="rounded-lg" />
           </motion.div>

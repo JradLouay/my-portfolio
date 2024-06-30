@@ -4,7 +4,7 @@ function LinkHoverEffect({ children, ...rest }) {
   return (
     <Link
       {...rest}
-      className="relative z-10 text-gray-700 w-fit text-[26px] font-semibold link-underline-effect"
+      className="heading-m link-underline-effect relative z-10 w-fit text-gray-700"
     >
       {children}
     </Link>
