@@ -106,14 +106,6 @@
     grid-column: span 7 / span 7;
   }
 
-  /* .project-grid-item-big {
-    grid-column-start: 1;
-    grid-column-end: 16;
-  }
-  .project-grid-item-small {
-    grid-column-start: 17;
-    grid-column-end: 26;
-  } */
   .title-big {
     font-size: 120px;
     font-style: normal;

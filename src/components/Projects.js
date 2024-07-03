@@ -13,7 +13,7 @@ function Projects({ showAll }) {
             return <Project key={index} index={index} project={project} />;
           })}
         {!showAll && (
-          <div className="!col-span-12 flex justify-center">
+          <div className="flex justify-center lg:!col-span-12">
             {" "}
             <Button
               text="See all Projects"
