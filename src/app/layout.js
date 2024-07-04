@@ -2,7 +2,7 @@ import { Space_Grotesk } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import "./globals.css";
-import StarsContainer from "@/components/Bubbles/Stars";
+import StarsContainer from "@/components/stars/Stars";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 

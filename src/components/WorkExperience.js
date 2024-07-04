@@ -1,4 +1,6 @@
+import { workExperience } from "@/constants";
 import DownloadCV from "./DownloadCV";
+import WorkExperienceItem from "./WorkExperienceItem";
 // origin-top-right -rotate-90
 function WorkExperience() {
   return (
@@ -9,18 +11,10 @@ function WorkExperience() {
           Professional Experience
         </h4>
       </div>
-      <div className="flex flex-col gap-2 text-gray-700 xl:flex-row-reverse">
-        <h3 className="heading-l font-semibold">Frontend Eng, Deloitte</h3>
-        <p className="self-end font-semibold">Oct.2022/Present</p>
-      </div>
-      <div className="flex flex-col gap-2 text-gray-700 xl:flex-row-reverse">
-        <h3 className="heading-l font-semibold">Frontend Eng, SYW</h3>
-        <p className="self-end font-semibold">July.2022/Oct.2022</p>
-      </div>
-      <div className="flex flex-col gap-2 text-gray-700 xl:flex-row-reverse">
-        <h3 className="heading-l font-semibold">Frontend Eng, Umanlink</h3>
-        <p className="self-end font-semibold">Aug.2020/July.2022</p>
-      </div>
+      {workExperience.map((item) => (
+        <WorkExperienceItem key={item.company} {...item} />
+      ))}
+
       <DownloadCV />
     </section>
   );

@@ -8,7 +8,7 @@ function WorkTogether() {
         <div className="flex flex-col justify-start gap-[5px]">
           <h4 className="heading-l text-gray-700">Want to work together?</h4>
           <p className="heading-m max-w-[746px] !font-normal text-gray-700">
-            Feel free to reach out for collaborations or just a friendly hello.
+            Feel free to reach out for collaborations.
           </p>
         </div>
         <LinkHoverEffect href={"mailto:jrad.louay@gmail.com"}>

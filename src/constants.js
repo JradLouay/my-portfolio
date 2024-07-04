@@ -51,4 +51,31 @@ const projects = [
   },
 ];
 
-export { urls, projects };
+const workExperience = [
+  {
+    jobTitle: "Frontend Eng",
+    company: "Deloitte",
+    period: "Oct.2022/Present",
+    skills: ["Angular", "Jest", "MUI", "Amcharts", "React"],
+  },
+  {
+    jobTitle: "Frontend Eng",
+    company: "SYW",
+    period: "July.2022/Oct.2022",
+    skills: ["Jest", "Styled−components", "MUI", "Redux", "React"],
+  },
+  {
+    jobTitle: "Frontend Dev",
+    company: "Umanlink",
+    period: "Aug.2020/July.2022",
+    skills: [
+      "Tailwindcss",
+      "Styled−components",
+      "MUI",
+      "Redux",
+      "reactNative",
+      "React",
+    ],
+  },
+];
+export { urls, projects, workExperience };
