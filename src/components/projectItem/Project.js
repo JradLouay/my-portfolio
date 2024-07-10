@@ -48,7 +48,7 @@ function Project({ project, index }) {
           layout
           ref={cardRef}
           style={{ y }}
-          whileHover={{ y: open ? 0 : -8 }}
+          whileHover={{ y: open ? 0 : -10 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
           layoutTransition={open ? openSpring : closeSpring}
           // onUpdate={checkZIndex}

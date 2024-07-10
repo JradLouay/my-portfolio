@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import CustomInput from "@/components/CustomInput";
 import CustomTextArea from "@/components/CustomTextArea";
+import supabase from "@/utils/supabaseClient";
 
 function Contact() {
   async function sendEmail(formData) {
@@ -10,7 +11,13 @@ function Contact() {
       email: formData.get("email"),
       message: formData.get("message"),
     };
-    console.log(message);
+    const { data, error } = await supabase
+      .from("messages")
+      .insert([
+        { Name: message.name, email: message.email, message: message.message },
+      ])
+      .select();
+    console.log(error);
   }
   return (
     <section className="mt-16 grid gap-16 lg:mt-24 lg:grid-cols-2">

@@ -13,10 +13,12 @@
     "@react-three/drei": "^9.107.3",
     "@react-three/fiber": "^8.16.8",
     "@react-three/postprocessing": "^2.16.2",
+    "@supabase/supabase-js": "^2.44.2",
     "framer-motion": "^11.2.12",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
+    "sharp": "^0.33.4",
     "three": "^0.166.0"
   },
   "devDependencies": {

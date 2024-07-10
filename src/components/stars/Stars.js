@@ -17,9 +17,9 @@ export default function StarsContainer() {
 function Stars(props) {
   const ref = useRef();
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.5 }),
+    random.inSphere(new Float32Array(7000), { radius: 1.5 }),
   );
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
   });
@@ -35,7 +35,7 @@ function Stars(props) {
         <PointMaterial
           transparent
           color="#ffa0e0"
-          size={0.005}
+          size={0.007}
           sizeAttenuation={true}
           depthWrite={false}
         />

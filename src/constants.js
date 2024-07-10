@@ -53,7 +53,7 @@ const projects = [
 
 const workExperience = [
   {
-    jobTitle: "Frontend Eng",
+    jobTitle: "Software Eng",
     company: "Deloitte",
     period: "Oct.2022/Present",
     skills: ["Angular", "Jest", "MUI", "Amcharts", "React"],
