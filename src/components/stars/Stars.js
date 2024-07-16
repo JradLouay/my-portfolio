@@ -34,7 +34,7 @@ function Stars(props) {
       >
         <PointMaterial
           transparent
-          color="#ffa0e0"
+          color="#83888F"
           size={0.007}
           sizeAttenuation={true}
           depthWrite={false}

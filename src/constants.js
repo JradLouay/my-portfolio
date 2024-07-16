@@ -22,21 +22,29 @@ const projects = [
     image: portfolioImage,
     color: "bg-color-mint",
     subTitle: "Single-page design portfolio",
+    preview: "https://singlepage-design-portfolio.netlify.app/",
+    github: "https://github.com/JradLouay/singlepage-design-portfolio",
   },
   {
     name: "Audiophile",
     image: audiophileImage,
     subTitle: "E-commerce website",
+    preview: "https://audiophile-ecommerce-website-liart.vercel.app/",
+    github: "https://github.com/JradLouay/audiophile-ecommerce-website",
   },
   {
     name: "Galleria",
     image: galleriaImage,
     subTitle: "Art gallery slideshow",
+    preview: "https://gorgeous-tiramisu-4ba9c2.netlify.app/",
+    github: "https://github.com/JradLouay/galleria-site",
   },
   {
     name: "Quiz",
     image: quizImage,
     subTitle: "Frontend Quiz app",
+    preview: "https://profound-creponne-e7d05b.netlify.app/",
+    github: "https://github.com/JradLouay/quiz-app",
   },
   {
     name: "Coffeeroasters",
@@ -48,6 +56,7 @@ const projects = [
     name: "Sinokompi",
     image: sinokompiImage,
     subTitle: "Sinokompi E-commerce website",
+    workInProgress: true,
   },
 ];
 

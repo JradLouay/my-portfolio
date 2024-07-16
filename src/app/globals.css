@@ -113,16 +113,16 @@
     line-height: 124%; /* 148.8px */
   }
   .header-name {
-    font-size: 32px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
-  .header-link {
-    font-size: 28px;
+  .header-links {
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 28px;
   }
 
   .link-underline-effect::after {
@@ -170,7 +170,7 @@
   }
   .card-content-container.open {
     @apply fixed left-0 right-0 top-0 overflow-hidden py-10;
-    z-index: 1;
+    z-index: 10;
   }
   @media (max-width: 1024px) {
     .heading-2xl {
@@ -187,20 +187,24 @@
     .title-big {
       @apply text-8xl;
     }
+
     body {
       @apply pt-6;
     }
+
     .card-content-container .open {
       @apply py-0;
     }
-  }
-  @media (max-width: 1024px) {
+
     .projects-grid {
       display: grid;
       grid-template-columns: unset;
     }
     .projects-grid > :nth-child(n) {
       grid-column: unset;
+    }
+    .header-name {
+      font-size: 24px;
     }
   }
   @media (max-width: 678px) {

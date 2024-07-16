@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Space_Grotesk } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
         <main className="section-container min-h-screen">{children}</main>
         <Footer />
         <StarsContainer />
+        <Analytics />
       </body>
     </html>
   );

@@ -57,6 +57,8 @@ function Project({ project, index }) {
           <ProjectTitle
             name={project.name}
             subTitle={project.subTitle}
+            preview={project.preview}
+            github={project.github}
             isVisible={open}
           />
           <motion.div layout>

@@ -17,7 +17,9 @@ function Contact() {
         { Name: message.name, email: message.email, message: message.message },
       ])
       .select();
-    console.log(error);
+    if (error) {
+      console.log(error);
+    }
   }
   return (
     <section className="mt-16 grid gap-16 lg:mt-24 lg:grid-cols-2">
