@@ -36,7 +36,7 @@ const projects = [
     name: "Galleria",
     image: galleriaImage,
     subTitle: "Art gallery slideshow",
-    preview: "https://gorgeous-tiramisu-4ba9c2.netlify.app/",
+    preview: "https://louay-jrad-galleria.netlify.app/",
     github: "https://github.com/JradLouay/galleria-site",
   },
   {
