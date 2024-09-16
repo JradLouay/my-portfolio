@@ -9,7 +9,7 @@ function HeroSection() {
         <p className="body">
           Software Engineer / Frontend Developer
           <br />
-          Currently working Full-time as a Frontend Developer at Deloitte.
+          Currently working Full-time as a Frontend Developer at Talan.
         </p>
         {/* <p className="">
           I am deeply committed to leveraging technology to create a positive

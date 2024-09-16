@@ -62,9 +62,22 @@ const projects = [
 
 const workExperience = [
   {
+    jobTitle: "Frontend Eng",
+    company: "Talan",
+    period: "May.2024/Present",
+    skills: [
+      "Vitest",
+      "React Router",
+      "Tailwind CSS",
+      "Redux",
+      "Nextjs",
+      "React",
+    ],
+  },
+  {
     jobTitle: "Software Eng",
     company: "Deloitte",
-    period: "Oct.2022/Present",
+    period: "Oct.2022/Apr.2024",
     skills: ["Angular", "Jest", "MUI", "Amcharts", "React"],
   },
   {
@@ -78,7 +91,7 @@ const workExperience = [
     company: "Umanlink",
     period: "Aug.2020/July.2022",
     skills: [
-      "Tailwindcss",
+      "TailwindCSS",
       "Styled−components",
       "MUI",
       "Redux",
