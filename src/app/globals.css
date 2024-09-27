@@ -169,7 +169,7 @@
     @apply pointer-events-none relative block h-full w-full;
   }
   .card-content-container.open {
-    @apply fixed left-0 right-0 top-0 overflow-hidden py-10;
+    @apply fixed left-0 right-0 top-0 overflow-hidden py-32;
     z-index: 10;
   }
   @media (max-width: 1024px) {

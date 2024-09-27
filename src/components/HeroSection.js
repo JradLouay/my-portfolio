@@ -11,7 +11,7 @@ function HeroSection() {
           <br />
           Currently working Full-time as a Frontend Developer at Talan.
         </p>
-        {/* <p className="">
+        {/* <p className="max-w-[500px]">
           I am deeply committed to leveraging technology to create a positive
           impact, and I find great joy in developing user-centric and delightful
           web applications.

@@ -51,7 +51,6 @@ function Project({ project, index }) {
           whileHover={{ y: open ? 0 : -10 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
           layoutTransition={open ? openSpring : closeSpring}
-          // onUpdate={checkZIndex}
           className={`${color} pointer-events-auto relative mx-auto my-0 flex h-full max-w-[700px] flex-col gap-12 overflow-hidden rounded-[24px] p-6 ${project.workInProgress ? "hover:cursor-not-allowed" : "hover:cursor-pointer"} xl:rounded-[64px] xl:px-20 xl:py-10`}
         >
           <ProjectTitle
@@ -64,14 +63,6 @@ function Project({ project, index }) {
           <motion.div layout>
             <Image src={project.image} alt="quiz" className="rounded-lg" />
           </motion.div>
-          {/* <motion.div
-            layout
-            className="z-60 absolute bottom-0 left-0 right-0 flex flex-wrap items-start p-6 xl:rounded-[64px] xl:px-20 xl:py-10"
-          >
-            <motion.div className="flex items-center justify-center rounded-3xl border border-gray-700 p-2 text-gray-700">
-              React
-            </motion.div>
-          </motion.div> */}
         </motion.div>
       </motion.div>
     </div>
