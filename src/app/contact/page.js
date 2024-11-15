@@ -47,7 +47,7 @@ function Contact() {
         <CustomTextArea
           label="Message"
           title="message"
-          placeholder={"We would like to hire you!!"}
+          placeholder={"Say hello!"}
           required={true}
           type="text"
         />
