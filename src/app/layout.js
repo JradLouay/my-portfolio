@@ -8,7 +8,7 @@ import StarsContainer from "@/components/stars/Stars";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Louay Jrad Website",
+  title: "Louay Jrad",
   creator: "Louay Jrad",
   keywords: [
     "Louay jrad",
