@@ -1,6 +1,6 @@
 "use client";
 import { motion, useMotionValue } from "framer-motion";
-import LinkHoverEffect from "../LinkHoverEffect";
+import LinkHoverEffect from "../link-hover-effect";
 
 function ProjectTitle({ name, subTitle, isVisible, preview, github }) {
   const opacity = useMotionValue(1);

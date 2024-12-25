@@ -1,4 +1,4 @@
-import LinkHoverEffect from "./LinkHoverEffect";
+import LinkHoverEffect from "./link-hover-effect";
 
 function WorkTogether() {
   return (

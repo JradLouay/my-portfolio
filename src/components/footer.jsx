@@ -1,7 +1,7 @@
 import Link from "next/link";
-import SocialMediaIconList from "./SocialMediaIconList";
+import SocialMediaIconList from "./social-mediaIcon-list";
 import { urls } from "@/constants";
-import ActiveLinkHide from "./ActiveLinkHide";
+import ActiveLinkHide from "./active-link-hide";
 
 function Footer() {
   return (

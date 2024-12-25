@@ -1,6 +1,6 @@
 import { urls } from "@/constants";
-import ActiveLinkStyle from "./ActiveLinkStyle";
-import MobileMenu from "./MobileMenu";
+import ActiveLinkStyle from "./active-link-style";
+import MobileMenu from "./mobile-menu";
 import Link from "next/link";
 function Header() {
   return (

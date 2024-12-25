@@ -1,5 +1,5 @@
-import Projects from "@/components/Projects";
-import WorkExperience from "@/components/WorkExperience";
+import Projects from "@/components/projects";
+import WorkExperience from "@/components/work-experience";
 
 function Work() {
   return (

@@ -1,6 +1,6 @@
 import { projects } from "@/constants";
 import Project from "./projectItem/Project";
-import Button from "./Button";
+import Button from "./button";
 
 function Projects({ showAll }) {
   return (

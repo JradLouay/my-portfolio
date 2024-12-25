@@ -1,5 +1,5 @@
-import ContactsComponent from "./ContactsComponent";
-import CustomLink from "./Link";
+import ContactsComponent from "./contacts";
+import CustomLink from "./link";
 
 function HeroSection() {
   return (

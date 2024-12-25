@@ -7,9 +7,9 @@ import {
   Transition,
   TransitionChild,
 } from "@headlessui/react";
-import ActiveLinkStyle from "./ActiveLinkStyle";
-import LinkHoverEffect from "./LinkHoverEffect";
-import ContactsComponent from "./ContactsComponent";
+import ActiveLinkStyle from "./active-link-style";
+import LinkHoverEffect from "./link-hover-effect";
+import ContactsComponent from "./contacts";
 import burgerImage from "../../public/icon-hamburger.svg";
 import iconClose from "../../public/icon-close.svg";
 

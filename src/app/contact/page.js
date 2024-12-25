@@ -1,6 +1,6 @@
-import Button from "@/components/Button";
-import CustomInput from "@/components/CustomInput";
-import CustomTextArea from "@/components/CustomTextArea";
+import CustomInput from "@/components/custom-input";
+import CustomTextArea from "@/components/custom-text-area";
+import SubmitButton from "@/components/submit-button";
 import supabase from "@/utils/supabaseClient";
 
 function Contact() {
@@ -51,7 +51,7 @@ function Contact() {
           required={true}
           type="text"
         />
-        <Button type="submit" text={"SEND MESSAGE"} />
+        <SubmitButton />
       </form>
     </section>
   );

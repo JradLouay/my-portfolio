@@ -1,6 +1,6 @@
 import { workExperience } from "@/constants";
-import DownloadCV from "./DownloadCV";
-import WorkExperienceItem from "./WorkExperienceItem";
+import DownloadCV from "./download-cv";
+import WorkExperienceItem from "./workexperience-item";
 // origin-top-right -rotate-90
 function WorkExperience() {
   return (
