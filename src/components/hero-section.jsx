@@ -7,15 +7,14 @@ function HeroSection() {
       <div className="flex flex-col items-start justify-center gap-5 text-gray-700">
         <h2 className="heading-2xl">Hi. I&apos;m Louay.</h2>
         <p className="body">
-          Software Engineer / Frontend Developer
+          Software Engineer / Frontend
           <br />
-          Currently working Full-time as a Frontend Developer at Talan.
         </p>
-        {/* <p className="max-w-[500px]">
-          I am deeply committed to leveraging technology to create a positive
-          impact, and I find great joy in developing user-centric and delightful
-          web applications.
-        </p> */}
+        <p className="max-w-[500px]">
+          Self-motivated Frontend Engineer with 4 years of experience creating web applications
+          for various industries.
+          I enjoy building user-focused, efficient, and intuitive products that make a real difference.
+        </p>
         <div className="mt-8 flex items-center gap-6">
           <CustomLink href="/contact">Contact me</CustomLink>
           <ContactsComponent />
