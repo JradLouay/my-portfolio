@@ -1,14 +1,11 @@
 'use client'
 
-import { useFormStatus } from 'react-dom'
 import Button from './button'
 
-function SubmitButton() {
-    const { pending } = useFormStatus()
-    console.log('pending', pending)
+function SubmitButton({ loading }) {
 
     return (
-        <Button disabled={pending} type="submit" text={!pending ? "SEND MESSAGE" : "SENDING..."} />
+        <Button disabled={loading} type="submit" text={!loading ? "SEND MESSAGE" : "SENDING..."} />
 
     )
 }

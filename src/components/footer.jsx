@@ -10,7 +10,7 @@ function Footer() {
         <div className="">
           {" "}
           <span className="title-big max-w-6xl">
-            Got a Project to work with?&nbsp;
+            Have a project?&nbsp;
           </span>{" "}
           <span className="hover:text-violet-400">
             {" "}

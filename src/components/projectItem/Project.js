@@ -30,7 +30,6 @@ function Project({ project, index }) {
   }
 
   function checkZIndex(latest) {
-    console.log(latest);
     if (open) {
       zIndex.set(2);
     } else if (!open && latest.scaleX < 1.01) {
