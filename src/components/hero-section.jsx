@@ -22,7 +22,7 @@ function HeroSection() {
           I specialize in turning complex challenges into intuitive, impactful products that empower 
           users and drive business success."
         </p> */}
-        <div className="mt-8 flex items-center gap-6">
+        <div className="mt-4 flex items-center gap-6">
           <CustomLink href="/contact">Contact me</CustomLink>
           <ContactsComponent />
         </div>

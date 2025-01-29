@@ -209,13 +209,13 @@
   }
   @media (max-width: 678px) {
     .heading-2xl {
-      font-size: 40px;
-      line-height: 40px; /* 100% */
+      font-size: 48px;
+      line-height: 48px; /* 100% */
       letter-spacing: -1.136px;
     }
     .heading-xl {
-      font-size: 32px;
-      line-height: 32px; /* 100% */
+      font-size: 40px;
+      line-height: 40px; /* 100% */
       letter-spacing: -1.136px;
     }
     .heading-l {
