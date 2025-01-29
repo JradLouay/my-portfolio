@@ -13,7 +13,7 @@ function WorkExperienceItem({ jobTitle, company, period, skills }) {
         {skills.map((skill) => (
           <div
             key={skill}
-            className="body flex items-center justify-center rounded-3xl border-2 border-gray-700 px-4 py-1"
+            className="body flex items-center justify-center rounded-3xl border-2 text-gray-700 border-gray-700 px-4 py-1"
           >
             {skill}
           </div>

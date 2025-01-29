@@ -18,6 +18,13 @@ const urls = [
 
 const projects = [
   {
+    name: "Audiophile",
+    image: audiophileImage,
+    subTitle: "E-commerce website",
+    preview: "https://audiophile-ecommerce-website-liart.vercel.app/",
+    github: "https://github.com/JradLouay/audiophile-ecommerce-website",
+  },
+  {
     name: "Portfolio",
     image: portfolioImage,
     color: "bg-color-mint",
@@ -25,13 +32,7 @@ const projects = [
     preview: "https://singlepage-design-portfolio.netlify.app/",
     github: "https://github.com/JradLouay/singlepage-design-portfolio",
   },
-  {
-    name: "Audiophile",
-    image: audiophileImage,
-    subTitle: "E-commerce website",
-    preview: "https://audiophile-ecommerce-website-liart.vercel.app/",
-    github: "https://github.com/JradLouay/audiophile-ecommerce-website",
-  },
+
   {
     name: "Galleria",
     image: galleriaImage,
