@@ -15,10 +15,10 @@ function Project({ project, index }) {
   const colors = {
     1: "bg-color-mint",
     2: "bg-color-red-rusty",
-    3: "bg-color-light-pink",
+    3: "bg-color-light-papaya",
     4: "bg-color-dark-violet",
     5: "bg-color-light-blue",
-    6: "bg-color-pinky",
+    6: "bg-color-lilac",
   };
 
   const color = colors[index + 1];
@@ -29,13 +29,6 @@ function Project({ project, index }) {
     }
   }
 
-  function checkZIndex(latest) {
-    if (open) {
-      zIndex.set(2);
-    } else if (!open && latest.scaleX < 1.01) {
-      zIndex.set(0);
-    }
-  }
   return (
     <div className={`h-[400px]`}>
       {open && <Overlay isOpen={open} close={toggle} />}
