@@ -9,11 +9,10 @@ function WorkExperienceItem({ jobTitle, company, period, skills }) {
         </h3>
         <p className="self-end font-semibold">{period}</p>
       </div>
-      <div className="flex flex-row-reverse flex-wrap gap-1">
+      <div className=" flex body flex-row-reverse flex-wrap-reverse gap-1 [&>*]:rounded-3xl [&>*]:border-2 [&>*]:px-4 [&>*]:py-1">
         {skills.map((skill) => (
-          <div
+          <div className="text-gray-700 border-gray-700"
             key={skill}
-            className="body flex items-center justify-center rounded-3xl border-2 text-gray-700 border-gray-700 px-4 py-1"
           >
             {skill}
           </div>

@@ -67,6 +67,7 @@ const workExperience = [
     period: "May.2024/Present",
     skills: [
       "Vitest",
+      "Vite",
       "Tailwind CSS",
       "React Router",
       "Redux",
