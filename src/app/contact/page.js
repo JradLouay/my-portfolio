@@ -23,7 +23,7 @@ function Contact() {
 
   return (
     <section className="mt-16 grid gap-16 lg:mt-24 lg:grid-cols-2">
-      <h1 className="text-[14vw] font-medium leading-[1em] text-gray-700">
+      <h1 className=" text-[17vw] md:text-[16vw] 2xl:text-[12vw] font-medium leading-[1em] text-gray-700">
         Hello.
       </h1>
       <form

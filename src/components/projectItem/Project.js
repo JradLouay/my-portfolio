@@ -43,7 +43,7 @@ function Project({ project, index }) {
           whileHover={{ y: open ? 0 : -10 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
           layoutTransition={open ? openSpring : closeSpring}
-          className={`${color} pointer-events-auto relative mx-auto my-0 flex h-full max-w-[700px] flex-col gap-12 overflow-hidden rounded-[24px] p-6 ${project.workInProgress ? "hover:cursor-not-allowed" : "hover:cursor-pointer"} xl:rounded-[64px] xl:px-20 xl:py-10`}
+          className={`${color} pointer-events-auto relative mx-auto my-0 flex max-w-[700px] flex-col gap-12 overflow-hidden rounded-[24px] p-6 ${project.workInProgress ? "hover:cursor-not-allowed" : "hover:cursor-pointer"} xl:rounded-[64px] xl:px-20 xl:py-10 h-full`}
         >
           <ProjectTitle
             name={project.name}
