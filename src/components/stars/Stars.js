@@ -17,12 +17,13 @@ export default function StarsContainer() {
 function Stars(props) {
   const ref = useRef();
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(7000), { radius: 1.5 }),
+    random.inSphere(new Float32Array(7002), { radius: 1.5 }),
   );
   useFrame((_, delta) => {
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
   });
+  console.log(sphere.length % 3)
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
       <Points
