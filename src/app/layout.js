@@ -4,7 +4,6 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import "./globals.css";
 import StarsContainer from "@/components/stars/Stars";
-import Script from "next/script";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -42,7 +41,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={spaceGrotesk.className}>
-        <Script strategy="beforeInteractive" src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCH_PUBLIC_KEY}`} />
         <Header />
         <main className="section-container min-h-screen">{children}</main>
         <Footer />
