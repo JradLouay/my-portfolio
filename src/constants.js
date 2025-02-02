@@ -18,12 +18,11 @@ const urls = [
 
 const projects = [
   {
-    name: "Portfolio",
-    image: portfolioImage,
-    color: "bg-color-mint",
-    subTitle: "Single-page design portfolio",
-    preview: "https://singlepage-design-portfolio.netlify.app/",
-    github: "https://github.com/JradLouay/singlepage-design-portfolio",
+    name: "Quiz",
+    image: quizImage,
+    subTitle: "Frontend Quiz app",
+    preview: "https://profound-creponne-e7d05b.netlify.app/",
+    github: "https://github.com/JradLouay/quiz-app",
   },
   {
     name: "Audiophile",
@@ -40,11 +39,11 @@ const projects = [
     github: "https://github.com/JradLouay/galleria-site",
   },
   {
-    name: "Quiz",
-    image: quizImage,
-    subTitle: "Frontend Quiz app",
-    preview: "https://profound-creponne-e7d05b.netlify.app/",
-    github: "https://github.com/JradLouay/quiz-app",
+    name: "Portfolio",
+    image: portfolioImage,
+    subTitle: "Single-page design portfolio",
+    preview: "https://singlepage-design-portfolio.netlify.app/",
+    github: "https://github.com/JradLouay/singlepage-design-portfolio",
   },
   {
     name: "Coffeeroasters",

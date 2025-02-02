@@ -13,9 +13,9 @@ function Project({ project, index }) {
   const cardRef = useRef(null);
 
   const colors = {
-    1: "bg-color-mint",
+    1: "bg-color-light-papaya",
     2: "bg-color-red-rusty",
-    3: "bg-color-light-papaya",
+    3: "bg-color-mint",
     4: "bg-color-dark-violet",
     5: "bg-color-light-blue",
     6: "bg-color-lilac",
