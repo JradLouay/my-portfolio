@@ -33,7 +33,7 @@ function MobileMenu() {
           onClose={toggle}
         >
           <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-            <div className="flex min-h-full items-start justify-center bg-light-cream px-4 pb-14 pt-10">
+            <div className="flex min-h-full items-start justify-center bg-light-cream px-6 md:px-10 pb-14 pt-4 md:pt-6 lg:pt-10">
               <TransitionChild
                 enter="ease-out duration-300"
                 enterFrom="opacity-0 transform-[scale(95%)]"

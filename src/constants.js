@@ -18,12 +18,11 @@ const urls = [
 
 const projects = [
   {
-    name: "Portfolio",
-    image: portfolioImage,
-    color: "bg-color-mint",
-    subTitle: "Single-page design portfolio",
-    preview: "https://singlepage-design-portfolio.netlify.app/",
-    github: "https://github.com/JradLouay/singlepage-design-portfolio",
+    name: "Quiz",
+    image: quizImage,
+    subTitle: "Frontend Quiz app",
+    preview: "https://profound-creponne-e7d05b.netlify.app/",
+    github: "https://github.com/JradLouay/quiz-app",
   },
   {
     name: "Audiophile",
@@ -40,11 +39,11 @@ const projects = [
     github: "https://github.com/JradLouay/galleria-site",
   },
   {
-    name: "Quiz",
-    image: quizImage,
-    subTitle: "Frontend Quiz app",
-    preview: "https://profound-creponne-e7d05b.netlify.app/",
-    github: "https://github.com/JradLouay/quiz-app",
+    name: "Portfolio",
+    image: portfolioImage,
+    subTitle: "Single-page design portfolio",
+    preview: "https://singlepage-design-portfolio.netlify.app/",
+    github: "https://github.com/JradLouay/singlepage-design-portfolio",
   },
   {
     name: "Coffeeroasters",
@@ -70,7 +69,7 @@ const workExperience = [
       "Vite",
       "Tailwind CSS",
       "React Router",
-      "Redux",
+      "Design System",
       "Nextjs",
       "React",
     ],
@@ -101,4 +100,10 @@ const workExperience = [
     ],
   },
 ];
-export { urls, projects, workExperience };
+
+const uses = {
+  hardware: ["Lenovo Thinkpad t14", "Redragon Azur"],
+  operatingSystems: ["Linux", "windows"],
+  Editor: { editor: 'Visual Studio Code', extensions: ['Andromeda', 'Auto Rename Tag', 'Prettier', 'Vitest', 'Todo Tree', 'Document This'] }
+}
+export { urls, uses, projects, workExperience };
