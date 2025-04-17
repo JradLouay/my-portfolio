@@ -61,7 +61,7 @@ const projects = [
 
 const workExperience = [
   {
-    jobTitle: "Frontend Eng",
+    jobTitle: "Frontend Dev",
     company: "Talan",
     period: "May.2024/Present",
     skills: [
@@ -75,13 +75,13 @@ const workExperience = [
     ],
   },
   {
-    jobTitle: "Software Eng",
+    jobTitle: "Frontend Dev",
     company: "Deloitte",
     period: "Oct.2022/Apr.2024",
     skills: ["Angular", "Jest", "MUI", "Amcharts", "React"],
   },
   {
-    jobTitle: "Frontend Eng",
+    jobTitle: "Frontend Dev",
     company: "SYW",
     period: "July.2022/Oct.2022",
     skills: ["Jest", "Styled−components", "MUI", "Redux", "React"],
