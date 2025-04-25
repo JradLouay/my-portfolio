@@ -13,12 +13,12 @@ function Project({ project, index }) {
   const cardRef = useRef(null);
 
   const colors = {
-    1: "bg-color-red-rusty",
-    2: "bg-color-mint",
-    3: "bg-color-light-pink",
+    1: "bg-color-light-papaya",
+    2: "bg-color-red-rusty",
+    3: "bg-color-mint",
     4: "bg-color-dark-violet",
     5: "bg-color-light-blue",
-    6: "bg-color-pinky",
+    6: "bg-color-lilac",
   };
 
   const color = colors[index + 1];
@@ -29,13 +29,6 @@ function Project({ project, index }) {
     }
   }
 
-  function checkZIndex(latest) {
-    if (open) {
-      zIndex.set(2);
-    } else if (!open && latest.scaleX < 1.01) {
-      zIndex.set(0);
-    }
-  }
   return (
     <div className={`h-[400px]`}>
       {open && <Overlay isOpen={open} close={toggle} />}
@@ -50,7 +43,7 @@ function Project({ project, index }) {
           whileHover={{ y: open ? 0 : -10 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
           layoutTransition={open ? openSpring : closeSpring}
-          className={`${color} pointer-events-auto relative mx-auto my-0 flex h-full max-w-[700px] flex-col gap-12 overflow-hidden rounded-[24px] p-6 ${project.workInProgress ? "hover:cursor-not-allowed" : "hover:cursor-pointer"} xl:rounded-[64px] xl:px-20 xl:py-10`}
+          className={`${color} pointer-events-auto relative mx-auto my-0 flex max-w-[700px] flex-col gap-12 overflow-hidden rounded-[24px] p-6 ${project.workInProgress ? "hover:cursor-not-allowed" : "hover:cursor-pointer"} xl:rounded-[64px] xl:px-20 xl:py-10 h-full`}
         >
           <ProjectTitle
             name={project.name}

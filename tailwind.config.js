@@ -16,10 +16,10 @@ module.exports = {
         "light-cream": "#fefcf7",
         "color-mint": "hsla(172, 45%, 75%, 1)",
         "color-red-rusty": "#F4A261",
-        "color-pinky": "hsla(284, 61%, 74%, 1)",
+        "color-lilac": "#D499B9",
         "color-dark-violet": "#ffdac6",
         "color-light-blue": "#86bbd8",
-        "color-light-pink": "#219ebc",
+        "color-light-papaya": "#FFEFD3",
       },
       boxShadow: {
         "custom-black": "9px 9px 0px 0px #000",

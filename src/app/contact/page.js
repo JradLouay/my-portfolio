@@ -5,6 +5,7 @@ import CustomTextArea from "@/components/custom-text-area";
 import SubmitButton from "@/components/submit-button";
 import { sendMessage } from "@/actions";
 import { generateRecaptchaToken } from "@/utils/recaptcha";
+import Script from "next/script";
 
 
 function Contact() {
@@ -23,7 +24,9 @@ function Contact() {
 
   return (
     <section className="mt-16 grid gap-16 lg:mt-24 lg:grid-cols-2">
-      <h1 className="text-[14vw] font-medium leading-[1em] text-gray-700">
+      <Script strategy="lazyOnload" src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCH_PUBLIC_KEY}`} />
+
+      <h1 className=" text-[17vw] md:text-[16vw] 2xl:text-[12vw] font-medium leading-[1em] text-gray-700">
         Hello.
       </h1>
       <form

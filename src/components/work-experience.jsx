@@ -1,7 +1,6 @@
 import { workExperience } from "@/constants";
 import DownloadCV from "./download-cv";
 import WorkExperienceItem from "./workexperience-item";
-// origin-top-right -rotate-90
 function WorkExperience() {
   return (
     <section className="mt-32 flex flex-col items-end gap-8 text-end">

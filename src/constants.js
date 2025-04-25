@@ -18,19 +18,11 @@ const urls = [
 
 const projects = [
   {
-    name: "Audiophile",
-    image: audiophileImage,
-    subTitle: "E-commerce website",
-    preview: "https://audiophile-ecommerce-website-liart.vercel.app/",
-    github: "https://github.com/JradLouay/audiophile-ecommerce-website",
-  },
-  {
-    name: "Portfolio",
-    image: portfolioImage,
-    color: "bg-color-mint",
-    subTitle: "Single-page design portfolio",
-    preview: "https://singlepage-design-portfolio.netlify.app/",
-    github: "https://github.com/JradLouay/singlepage-design-portfolio",
+    name: "Quiz",
+    image: quizImage,
+    subTitle: "Frontend Quiz app",
+    preview: "https://profound-creponne-e7d05b.netlify.app/",
+    github: "https://github.com/JradLouay/quiz-app",
   },
 
   {
@@ -41,11 +33,11 @@ const projects = [
     github: "https://github.com/JradLouay/galleria-site",
   },
   {
-    name: "Quiz",
-    image: quizImage,
-    subTitle: "Frontend Quiz app",
-    preview: "https://profound-creponne-e7d05b.netlify.app/",
-    github: "https://github.com/JradLouay/quiz-app",
+    name: "Portfolio",
+    image: portfolioImage,
+    subTitle: "Single-page design portfolio",
+    preview: "https://singlepage-design-portfolio.netlify.app/",
+    github: "https://github.com/JradLouay/singlepage-design-portfolio",
   },
   {
     name: "Coffeeroasters",
@@ -68,15 +60,16 @@ const workExperience = [
     period: "May.2024/Present",
     skills: [
       "Vitest",
+      "Vite",
       "Tailwind CSS",
       "React Router",
-      "Redux",
+      "Design System",
       "Nextjs",
       "React",
     ],
   },
   {
-    jobTitle: "Software Eng",
+    jobTitle: "Frontend Eng",
     company: "Deloitte",
     period: "Oct.2022/Apr.2024",
     skills: ["Angular", "Jest", "MUI", "Amcharts", "React"],
@@ -88,7 +81,7 @@ const workExperience = [
     skills: ["Jest", "Styled−components", "MUI", "Redux", "React"],
   },
   {
-    jobTitle: "Frontend Dev",
+    jobTitle: "Frontend Eng",
     company: "Umanlink",
     period: "Aug.2020/July.2022",
     skills: [
@@ -101,4 +94,10 @@ const workExperience = [
     ],
   },
 ];
-export { urls, projects, workExperience };
+
+const uses = {
+  hardware: ["Lenovo Thinkpad t14", "Redragon Azur"],
+  operatingSystems: ["Linux", "windows"],
+  Editor: { editor: 'Visual Studio Code', extensions: ['Andromeda', 'Auto Rename Tag', 'Prettier', 'Vitest', 'Todo Tree', 'Document This'] }
+}
+export { urls, uses, projects, workExperience };
